@@ -1,0 +1,10 @@
+/node_modules/
+/public/bundle.js
+/public/bundle.js.map
+
+# Ignore extra files in kicad projects
+*.kicad_prl
+*.kicad_pcb
+*-backups/
+fp-info-cache
+

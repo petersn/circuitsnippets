@@ -1,0 +1,17 @@
+{
+  "name": "template",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "npx esbuild src/App.tsx --loader:.kicad_sch=text --bundle --minify --sourcemap --target=es2020 --format=esm --outfile=public/bundle.js",
+    "dev": "npm run build -- --servedir=public"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "esbuild": "^0.17.8"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -1,0 +1,38 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+@keyframes subtle-glow {
+  0% {
+    outline: 2px solid rgba(255, 255, 0, 0.8);
+    /* box-shadow: 10px -10px 0px rgba(255, 255, 0, 0); */
+  }
+  50% {
+    outline: 20px solid rgba(255, 255, 0, 0.8);
+    /* box-shadow: -10px 10px 0px rgba(255, 255, 0, 0.8); */
+  }
+  100% {
+    outline: 2px solid rgba(255, 255, 0, 0.8);
+    /* box-shadow: 0 0 0px rgba(255, 255, 0, 0); */
+  }
+}
+
+.glow-on-load {
+  animation: subtle-glow 1s ease-out 0s 2;
+}
+
+.hover-button {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.hover-button:hover {
+  transform: scale(1.05);
+}
