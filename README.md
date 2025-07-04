@@ -16,6 +16,7 @@ Potential issue
 Note that right now there might be an issue where it only works to paste into kicad 9.
 If the circuit snippet pastes as text (rather than schematic), as shown below, please let me know what kicad version you're in!
 
+![Example of how it might fail](img/demo.jpeg)
 
 Contributing
 ------------
